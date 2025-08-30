@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="50px" viewBox="0 0 70 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Desktop</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M51,44 C52.1045695,44 53,44.8954305 53,46 L53,48 C53,49.1045695 52.1045695,50 51,50 L18,50 C16.8954305,50 16,49.1045695 16,48 L16,46 C16,44.8954305 16.8954305,44 18,44 L30,44 L31,42.889 L31,39 L38,39 L38,42.889 L39,44 L51,44 Z M66,0 C68.209139,0 70,1.790861 70,4 L70,34 C70,36.209139 68.209139,38 66,38 L4,38 C1.790861,38 0,36.209139 0,34 L0,4 C0,1.790861 1.790861,4.4408921e-16 4,0 L66,0 Z" id="Desktop" fill="#FFFFFF"></path>
+    </g>
+</svg>
