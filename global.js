@@ -53,3 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const year = getCurrentYear();
     document.getElementById("footerText").textContent = `${year}. Sunny Floppy Disk Studios`;
 });
+
+// page
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
