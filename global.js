@@ -1,5 +1,14 @@
-// navbar
+// lenis
+const lenis = new Lenis()
 
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+// navbar
 document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector(".sidebar ul");
     const highlight = document.createElement("div");
