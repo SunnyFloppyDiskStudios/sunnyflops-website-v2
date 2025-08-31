@@ -1,7 +1,7 @@
 // navbar
 
 document.addEventListener("DOMContentLoaded", () => {
-    const nav = document.querySelector(".navbar ul");
+    const nav = document.querySelector(".sidebar ul");
     const highlight = document.createElement("div");
     highlight.classList.add("nav-highlight");
     nav.appendChild(highlight);
@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// footer
 function getCurrentYear() {
     return new Date().getFullYear();
 }
@@ -42,26 +43,4 @@ function getCurrentYear() {
 document.addEventListener("DOMContentLoaded", () => {
     const year = getCurrentYear();
     document.getElementById("footerText").textContent = `${year}. Sunny Floppy Disk Studios`;
-});
-
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    const scrollY = window.scrollY;
-
-    const scrollVal = 105;
-    let scale = 0;
-
-    if (scrollY > scrollVal) {
-        scale = (scrollY - scrollVal) / (scrollVal - scrollVal);
-        scale = Math.min(scale, 1);
-    }
-
-    const maxOffset = 10;
-    const offset = scale * maxOffset;
-
-    navbar.style.marginTop = `${offset}px`;
-    navbar.style.width = `calc(100% - ${offset * 2}px)`;
-
-    const radius = scale * 10;
-    navbar.style.borderRadius = `${radius}px`;
 });
