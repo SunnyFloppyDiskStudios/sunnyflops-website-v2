@@ -2,6 +2,9 @@
     --purple: #6b5fff;
     --black: #00122c;
 
+    --whiteNavbar: rgba(255, 255, 255, 0.75);
+    --blackNavbar: rgba(0, 0, 0, 0.75);
+
     --curve: cubic-bezier(.24,1.19,.43,1.654);
 }
 
@@ -120,9 +123,9 @@ h1 a:hover {
     transform: rotate(0deg);
     align-self: flex-start;
     position: absolute;
+    transform-origin: center;
     top: 0;
     left: 0;
-    transform-origin: center;
 }
 
 .sidebar * {
@@ -159,25 +162,8 @@ h1 a:hover {
     object-fit: contain;
 }
 
-
-.nav-highlight {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    z-index: 0;
-    transition: all 0.3s ease;
-    opacity: 0;
-    pointer-events: none;
-}
-
-
 .sidebar li {
     position: relative;
-}
-
-.nav-left {
-    margin-left: auto;
 }
 
 .sidebar a span {
@@ -193,6 +179,21 @@ h1 a:hover {
     background-color: transparent;
 }
 
+.nav-left {
+    margin-left: auto;
+}
+
+.nav-highlight {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 0;
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .nav-selector {
     position: absolute;
     top: 50%;
@@ -204,6 +205,28 @@ h1 a:hover {
     transition: all 0.35s var(--curve), opacity 0.25s ease;
     opacity: 0;
     pointer-events: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 100;
+
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 9.75px;
+    margin: 0;
+    display: flex;
+    position: relative;
+    margin-left: 50px;
 }
 
 .container {
