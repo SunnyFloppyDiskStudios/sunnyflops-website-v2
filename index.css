@@ -183,6 +183,9 @@ h1 a:hover {
 
 .nav-left {
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 .nav-highlight {
@@ -227,15 +230,20 @@ h1 a:hover {
     backdrop-filter: blur(5px);
     list-style: none;
     padding: 9.75px;
-    margin: 0;
+
     display: flex;
     position: relative;
-    margin-left: 50px;
+    margin: 0 0 0 50px;
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
+}
+
+.navbar h3 {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
