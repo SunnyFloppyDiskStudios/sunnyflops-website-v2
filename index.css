@@ -239,6 +239,9 @@ h1 a:hover {
 .navbar a {
     color: white;
     text-decoration: none;
+
+    font-family: Fredoka, sans-serif;
+    font-weight: lighter;
 }
 
 .navbar h3 {
