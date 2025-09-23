@@ -73,5 +73,4 @@ document.body.onpointermove = event => {
         top: `${clientY}px`
 
     }, {duration: 1000, fill: "forwards"})
-
 }

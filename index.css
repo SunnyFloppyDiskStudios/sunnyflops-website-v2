@@ -122,6 +122,10 @@ h1 a:hover {
     z-index: 999999999999;
 }
 
+.sidebar:hover {
+    width: 450px;
+}
+
 .sidebar *:first-child {
     margin: 0;
     color: white;
@@ -160,7 +164,7 @@ h1 a:hover {
 }
 
 .sidebar img {
-    max-width: 100%;
+    max-width: 30px;
     max-height: 50px;
     width: auto;
     height: auto;
@@ -170,6 +174,22 @@ h1 a:hover {
 
 .sidebar li {
     position: relative;
+}
+
+.sidebar h3 {
+    color: white;
+    font-weight: bolder;
+    width: 30px;
+    padding-top: 10px;
+}
+
+.sidebar h4 {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0;
+    width: 30px;
+    margin-bottom: 15px;
 }
 
 .sidebar a span {
