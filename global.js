@@ -74,3 +74,15 @@ document.body.onpointermove = event => {
 
     }, {duration: 1000, fill: "forwards"})
 }
+
+// sidebar arro
+const sidebar = document.querySelector('.sidebar');
+const arrow = document.getElementById('arrow');
+
+sidebar.addEventListener('mouseenter', () => {
+    arrow.textContent = '<';
+});
+
+sidebar.addEventListener('mouseleave', () => {
+    arrow.textContent = '>';
+});

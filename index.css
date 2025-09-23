@@ -119,7 +119,9 @@ h1 a:hover {
     height: 100%;
     box-sizing: border-box;
     padding: 10px;
-    z-index: 999999999999;
+    z-index: 9999;
+
+    transition: width 0.15s ease-in-out;
 }
 
 .sidebar:hover {
@@ -239,12 +241,12 @@ h1 a:hover {
 .navbar {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50px;
     right: 0;
     overflow: hidden;
-    z-index: 100;
+    z-index: 10000;
 
-    width: 100%;
+    width: calc(100vw - 50px);
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -255,7 +257,7 @@ h1 a:hover {
 
     display: flex;
     position: relative;
-    margin: 0 0 0 50px;
+    margin: 0;
 }
 
 .navbar a {
