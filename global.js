@@ -61,3 +61,17 @@ function topFunction() {
         behavior: 'smooth'
     });
 }
+
+// cursor following element
+const move = document.getElementById("cursor-follow");
+
+document.body.onpointermove = event => {
+    const { clientX, clientY } = event;
+
+    move.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`
+
+    }, {duration: 1000, fill: "forwards"})
+
+}

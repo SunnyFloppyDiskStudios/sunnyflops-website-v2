@@ -433,7 +433,7 @@ div.gap {
 }
 
 .navbar-gradient {
-    background-image: linear-gradient(to bottom, black, #262626);
+    background-image: linear-gradient(to bottom, black, transparent 100%);
     width: 100%;
     height: 75px;
     margin: 0 auto;
@@ -447,8 +447,16 @@ div.gap {
     z-index: -11;
 }
 
-.cursor-follow {
+#cursor-follow {
     z-index: -12;
+    background: radial-gradient(circle at center, var(--purple) 0%, transparent 50%);
+    height: 500px;
+    aspect-ratio: 1;
+    left: 50%;
+    top: 50%;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    position: fixed;
 }
 
 .tileable-stars-black {
