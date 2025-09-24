@@ -207,6 +207,23 @@ h1 a:hover {
     background-color: transparent;
 }
 
+.sidebar .hidden-nav {
+    rotate: 90deg;
+    width: 400px;
+    height: calc(100vh - 65.5px);
+    position: absolute;
+    top: 65.5px;
+    right: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.sidebar:hover .hidden-nav {
+    pointer-events: auto;
+    opacity: 1;
+}
+
 .nav-left {
     margin-left: auto;
     display: flex;
