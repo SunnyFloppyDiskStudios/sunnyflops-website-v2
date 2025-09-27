@@ -72,7 +72,7 @@ document.body.onpointermove = event => {
         left: `${clientX}px`,
         top: `${clientY}px`
 
-    }, {duration: 1000, fill: "forwards"})
+    }, {duration: 50, fill: "forwards"})
 }
 
 // sidebar arro
