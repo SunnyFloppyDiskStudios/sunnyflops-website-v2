@@ -632,3 +632,7 @@ div.gap {
     text-align: left;
     justify-content: flex-start;
 }
+
+@view-transition {
+    navigation: auto;
+}
