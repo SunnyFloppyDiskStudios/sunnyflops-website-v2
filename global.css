@@ -37,6 +37,8 @@ html {
     max-width: 100%;
 
     background-color: #262626;
+
+    scrollbar-width: none;
 }
 
 html, body {
