@@ -10,7 +10,7 @@ requestAnimationFrame(raf)
 
 // navbar
 document.addEventListener("DOMContentLoaded", () => {
-    const nav = document.querySelector(".sidebar ul");
+    const nav = document.querySelector(".sidebar-base ul");
     const highlight = document.createElement("div");
     highlight.classList.add("nav-highlight");
     nav.appendChild(highlight);
@@ -75,14 +75,32 @@ document.body.onpointermove = event => {
     }, {duration: 50, fill: "forwards"})
 }
 
-// sidebar arro
-const sidebar = document.querySelector('.sidebar');
+// sidebar-base arro
+const sbb = document.querySelector('.sidebar-base');
+const sbe = document.querySelector('.sidebar-expanded');
 const arrow = document.getElementById('arrow');
+const sbLogo = document.getElementById('sb-logo');
 
-sidebar.addEventListener('mouseenter', () => {
+sbb.addEventListener('mouseenter', () => {
     arrow.textContent = '<';
+    sbLogo.style.transform = "rotate(0deg)";
+    sbe.style.width = "450px";
 });
 
-sidebar.addEventListener('mouseleave', () => {
+sbb.addEventListener('mouseleave', () => {
     arrow.textContent = '>';
+    sbLogo.style.transform = "rotate(-90deg)";
+    sbe.style.width = "50px";
+});
+
+sbe.addEventListener('mouseenter', () => {
+    arrow.textContent = '<';
+    sbLogo.style.transform = "rotate(0deg)";
+    sbe.style.width = "450px";
+});
+
+sbe.addEventListener('mouseleave', () => {
+    arrow.textContent = '>';
+    sbLogo.style.transform = "rotate(-90deg)";
+    sbe.style.width = "50px";
 });

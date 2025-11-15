@@ -109,7 +109,7 @@ h1 a:hover {
     transform: scale(1.1);
 }
 
-.sidebar {
+.sidebar-base {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -120,35 +120,64 @@ h1 a:hover {
     width: 50px;
     height: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     z-index: 9999;
+}
+
+.top-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-group + * {
+    margin-top: auto;
+}
+
+.sidebar-expanded {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: var(--purple);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 9998;
 
     transition: width 0.15s ease-in-out;
 }
 
-.sidebar:hover {
-    width: 450px;
-}
-
-.sidebar *:first-child {
+.sidebar-base *:first-child {
     margin: 0;
     color: white;
-    font-weight: bolder;
+    font-weight: bold;
     transform: rotate(0deg);
-    align-self: flex-start;
-    position: absolute;
+    align-self: center;
     transform-origin: center;
+
+    position: static;
     top: 0;
     left: 0;
 }
 
-.sidebar * {
+.sidebar-base > *:nth-child(-n + 5) {
+    margin-bottom: 10px;
+}
+
+
+.sidebar-base * {
     transform: rotate(-90deg);
     transform-origin: center;
     white-space: nowrap;
 }
 
-.sidebar ul {
+.sidebar-base ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -157,7 +186,7 @@ h1 a:hover {
     align-items: center;
 }
 
-.sidebar a {
+.sidebar-base a {
     color: white;
     text-decoration: none;
     padding: 15px 40px;
@@ -167,27 +196,28 @@ h1 a:hover {
     z-index: 2;
 }
 
-.sidebar img {
+.sidebar-base img {
     max-width: 30px;
     max-height: 50px;
     width: auto;
     height: auto;
     display: block;
     object-fit: contain;
+    transition: transform 0.2s ease;
 }
 
-.sidebar li {
+.sidebar-base li {
     position: relative;
 }
 
-.sidebar h3 {
+.sidebar-base h3 {
     color: white;
     font-weight: bolder;
     width: 30px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
-.sidebar h4 {
+.sidebar-base h4 {
     color: white;
     font-style: italic;
     font-weight: bold;
@@ -196,20 +226,20 @@ h1 a:hover {
     margin-bottom: 15px;
 }
 
-.sidebar a span {
+.sidebar-base a span {
     display: inline-block;
     transition: transform 0.3s var(--curve);
 }
 
-.sidebar a:hover span {
+.sidebar-base a:hover span {
     transform: scale(1.3);
 }
 
-.sidebar a:hover {
+.sidebar-base a:hover {
     background-color: transparent;
 }
 
-.sidebar .hidden-nav {
+.sidebar-base .hidden-nav {
     rotate: 90deg;
     width: 400px;
     height: calc(100vh - 65.5px);
@@ -221,7 +251,7 @@ h1 a:hover {
     opacity: 0;
 }
 
-.sidebar:hover .hidden-nav {
+.sidebar-base:hover .hidden-nav {
     pointer-events: auto;
     opacity: 1;
 }
