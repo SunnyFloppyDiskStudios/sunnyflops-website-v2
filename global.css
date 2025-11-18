@@ -68,8 +68,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-style: normal;
     font-weight: 500;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
     white-space: pre-wrap;
 }
 
@@ -140,19 +139,25 @@ h1 a:hover {
 .sidebar-expanded {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: var(--purple);
     position: fixed;
     top: 0;
     left: 0;
-    width: 50px;
+    width: 450px;
     height: 100%;
     box-sizing: border-box;
     z-index: 9998;
 
+    transform: translateX(-400px);
+
     padding: 0 10px;
 
-    transition: width 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out;
+}
+
+.sidebar-expanded h1, .sidebar-expanded h2, .sidebar-expanded h3, .sidebar-expanded h4, .sidebar-expanded h5, .sidebar-expanded h6 {
+    color: white;
 }
 
 .sidebar-base *:first-child {
@@ -521,7 +526,7 @@ div.gap {
 }
 
 #cursor-follow {
-    z-index: -12;
+    z-index: 0 !important;
     background: radial-gradient(circle at center, var(--purple) 0%, transparent 50%);
     height: 500px;
     aspect-ratio: 1;

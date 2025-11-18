@@ -75,32 +75,26 @@ document.body.onpointermove = event => {
     }, {duration: 50, fill: "forwards"})
 }
 
-// sidebar-base arro
+// sidebar stuff
 const sbb = document.querySelector('.sidebar-base');
 const sbe = document.querySelector('.sidebar-expanded');
 const arrow = document.getElementById('arrow');
 const sbLogo = document.getElementById('sb-logo');
 
-sbb.addEventListener('mouseenter', () => {
+function openSidebar() {
     arrow.textContent = '<';
     sbLogo.style.transform = "rotate(0deg)";
-    sbe.style.width = "450px";
-});
+    sbe.style.transform = "translateX(0)";
+}
 
-sbb.addEventListener('mouseleave', () => {
+function closeSidebar() {
     arrow.textContent = '>';
     sbLogo.style.transform = "rotate(-90deg)";
-    sbe.style.width = "50px";
-});
+    sbe.style.transform = "translateX(-400px)";
+}
 
-sbe.addEventListener('mouseenter', () => {
-    arrow.textContent = '<';
-    sbLogo.style.transform = "rotate(0deg)";
-    sbe.style.width = "450px";
-});
+sbb.addEventListener('mouseenter', openSidebar);
+sbb.addEventListener('mouseleave', closeSidebar);
 
-sbe.addEventListener('mouseleave', () => {
-    arrow.textContent = '>';
-    sbLogo.style.transform = "rotate(-90deg)";
-    sbe.style.width = "50px";
-});
+sbe.addEventListener('mouseenter', openSidebar);
+sbe.addEventListener('mouseleave', closeSidebar);
