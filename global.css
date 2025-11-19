@@ -144,20 +144,24 @@ h1 a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 450px;
+    width: 400px;
     height: 100%;
     box-sizing: border-box;
     z-index: 9998;
 
-    transform: translateX(-400px);
+    transform: translateX(-350px);
 
-    padding: 0 10px;
+    /*padding: 0 10px;*/
 
-    transition: transform 0.15s ease-in-out;
+    transition: transform 0.25s ease;
 }
 
 .sidebar-expanded h1, .sidebar-expanded h2, .sidebar-expanded h3, .sidebar-expanded h4, .sidebar-expanded h5, .sidebar-expanded h6 {
     color: white;
+    margin: 1px 0;
+    padding: 0;
+    padding-bottom: 6px;
+    text-align: left;
 }
 
 .sidebar-base *:first-child {

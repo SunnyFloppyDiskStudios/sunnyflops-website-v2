@@ -84,13 +84,13 @@ const sbLogo = document.getElementById('sb-logo');
 function openSidebar() {
     arrow.textContent = '<';
     sbLogo.style.transform = "rotate(0deg)";
-    sbe.style.transform = "translateX(0)";
+    sbe.style.transform = "translateX(50px)";
 }
 
 function closeSidebar() {
     arrow.textContent = '>';
     sbLogo.style.transform = "rotate(-90deg)";
-    sbe.style.transform = "translateX(-400px)";
+    sbe.style.transform = "translateX(-350px)";
 }
 
 sbb.addEventListener('mouseenter', openSidebar);
