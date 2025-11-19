@@ -8,52 +8,6 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-// navbar
-document.addEventListener("DOMContentLoaded", () => {
-    const nav = document.querySelector(".sidebar-base ul");
-    const highlight = document.createElement("div");
-    highlight.classList.add("nav-highlight");
-    nav.appendChild(highlight);
-
-    let timeout;
-
-    nav.querySelectorAll("a").forEach(link => {
-        link.addEventListener("mouseenter", () => {
-            const rect = link.getBoundingClientRect();
-            const navRect = nav.getBoundingClientRect();
-
-            highlight.style.width = `${rect.width}px`;
-            highlight.style.left = `${rect.left - navRect.left}px`;
-            highlight.style.opacity = 1;
-
-            clearTimeout(timeout);
-        });
-
-        link.addEventListener("mouseleave", () => {
-            timeout = setTimeout(() => {
-                highlight.style.opacity = 0;
-            }, 150);
-        });
-    });
-
-    nav.addEventListener("mouseleave", () => {
-        timeout = setTimeout(() => {
-            highlight.style.opacity = 0;
-        }, 150);
-    });
-});
-
-
-// footer
-function getCurrentYear() {
-    return new Date().getFullYear();
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-    const year = getCurrentYear();
-    document.getElementById("yearText").textContent = `• ${year}`;
-});
-
 // page
 function topFunction() {
     window.scrollTo({
@@ -76,6 +30,12 @@ document.body.onpointermove = event => {
 }
 
 // sidebar stuff
+document.addEventListener("DOMContentLoaded", () => {
+    const year = new Date().getFullYear();
+    document.getElementById("yearText").textContent = `• ${year}`;
+    console.log("yearText =", document.getElementById("yearText"));
+});
+
 const sbb = document.querySelector('.sidebar-base');
 const sbe = document.querySelector('.sidebar-expanded');
 const arrow = document.getElementById('arrow');
