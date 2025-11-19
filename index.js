@@ -2,7 +2,6 @@ var greetings = [
     "Hello :)",
     "Hi :)",
     "Hey :)",
-    "I am a good me"
 ]
 
 window.addEventListener("DOMContentLoaded", () => {
