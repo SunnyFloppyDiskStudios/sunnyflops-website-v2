@@ -51,7 +51,7 @@ function getCurrentYear() {
 
 document.addEventListener("DOMContentLoaded", () => {
     const year = getCurrentYear();
-    document.getElementById("footerText").textContent = `${year}. Sunny Floppy Disk Studios`;
+    document.getElementById("yearText").textContent = `• ${year}`;
 });
 
 // page
@@ -90,7 +90,7 @@ function openSidebar() {
 function closeSidebar() {
     arrow.textContent = '>';
     sbLogo.style.transform = "rotate(-90deg)";
-    sbe.style.transform = "translateX(-350px)";
+    sbe.style.transform = "translateX(-450px)";
 }
 
 sbb.addEventListener('mouseenter', openSidebar);

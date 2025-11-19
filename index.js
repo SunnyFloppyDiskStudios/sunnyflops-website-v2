@@ -1,4 +1,4 @@
-var greetings = [
+let greetings = [
     "Hello :)",
     "Hi :)",
     "Hey :)",
