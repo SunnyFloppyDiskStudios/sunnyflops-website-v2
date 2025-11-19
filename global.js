@@ -33,7 +33,6 @@ document.body.onpointermove = event => {
 document.addEventListener("DOMContentLoaded", () => {
     const year = new Date().getFullYear();
     document.getElementById("yearText").textContent = `• ${year}`;
-    console.log("yearText =", document.getElementById("yearText"));
 });
 
 const sbb = document.querySelector('.sidebar-base');
