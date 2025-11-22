@@ -347,16 +347,12 @@ h1 a:hover {
     transform: translate(-50%, -50%);
 }
 
-#socials {
-    padding: 0;
-}
-
-#socials img {
+.socials img {
     max-width: 25px;
 }
 
 .socials {
-    padding-left: 0;
+    padding: 0;
     align-items: center;
     display: flex;
 }
