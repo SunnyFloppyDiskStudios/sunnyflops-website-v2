@@ -217,6 +217,20 @@ h1 a:hover {
     transition: transform 0.2s ease;
 }
 
+.sidebar-base input {
+    max-width: 30px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.3s var(--curve);
+}
+
+.sidebar-base input:hover {
+    transform: scale(1.35) rotate(-90deg);
+}
+
 .sidebar-base li {
     position: relative;
 }

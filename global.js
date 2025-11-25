@@ -32,7 +32,7 @@ document.body.onpointermove = event => {
 // sidebar stuff
 document.addEventListener("DOMContentLoaded", () => {
     const year = new Date().getFullYear();
-    document.getElementById("yearText").textContent = `• ${year}`;
+    document.getElementById("yearText").textContent = year.toString();
 });
 
 const sbb = document.querySelector('.sidebar-base');
