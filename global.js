@@ -8,25 +8,13 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-// page
+// navigation
 function topFunction() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// cursor following element
-const move = document.getElementById("cursor-follow");
-
-document.body.onpointermove = event => {
-    const { clientX, clientY } = event;
-
-    move.animate({
-        left: `${clientX}px`,
-        top: `${clientY}px`
-
-    }, {duration: 50, fill: "forwards"})
+function navTo(where) {
+    window.location.href = where;
 }
 
 // sidebar stuff
@@ -57,3 +45,16 @@ sbb.addEventListener('mouseleave', closeSidebar);
 
 sbe.addEventListener('mouseenter', openSidebar);
 sbe.addEventListener('mouseleave', closeSidebar);
+
+// cursor following element
+const move = document.getElementById("cursor-follow");
+
+document.body.onpointermove = event => {
+    const { clientX, clientY } = event;
+
+    move.animate({
+        left: `${clientX}px`,
+        top: `${clientY}px`
+
+    }, {duration: 50, fill: "forwards"})
+}

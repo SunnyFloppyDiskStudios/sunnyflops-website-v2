@@ -1,3 +1,4 @@
+// greeter
 let greetings = [
     "Hello :)",
     "Hi :)",
