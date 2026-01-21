@@ -12,12 +12,12 @@
 
 @font-face {
     font-family: Fredoka;
-    src: url("fonts/Fredoka One.ttf")
+    src: url("a_assets/fonts/Fredoka One.ttf")
 }
 
 @font-face {
     font-family: Rubik;
-    src: url("fonts/Rubik.ttf")
+    src: url("a_assets/fonts/Rubik.ttf")
 }
 
 body {
@@ -404,7 +404,7 @@ div.gap {
 }
 
 .tileable-stars-black {
-    background-image: url("/images/bg-assets/invis-black-stars.png");
+    background-image: url("/a_assets/images/bg-assets/invis-black-stars.png");
     background-size: 100px;
     background-repeat: repeat;
     height: 100vh;
@@ -413,7 +413,7 @@ div.gap {
     position: relative;
     text-align: center;
     color: white;
-    align-items: center;
+    /*align-items: center;*/
     -webkit-text-stroke: 7.5px black;
     paint-order: stroke fill;
 
@@ -421,7 +421,7 @@ div.gap {
 }
 
 .tileable-stars-blue {
-    background-image: url("/images/bg-assets/bluestars.png");
+    background-image: url("/a_assets/images/bg-assets/bluestars.png");
     background-size: 100px;
     background-repeat: repeat;
     height: 300px;
@@ -455,7 +455,7 @@ div.gap {
     left: -50%;
     width: 200%;
     height: 200%;
-    background-image: url("/images/bg-assets/purplepattern.png");
+    background-image: url("/a_assets/images/bg-assets/purplepattern.png");
     background-size: 280px;
     background-repeat: repeat;
     transform: rotate(-5deg);
@@ -464,7 +464,7 @@ div.gap {
 }
 
 .tileable-stars-yellow {
-    background-image: url("/images/bg-assets/yellowstars.png");
+    background-image: url("/a_assets/images/bg-assets/yellowstars.png");
     background-size: 100px;
     background-repeat: repeat;
     height: 300px;
@@ -481,7 +481,7 @@ div.gap {
 }
 
 .tileable-stars-red {
-    background-image: url("/images/bg-assets/redstars.png");
+    background-image: url("/a_assets/images/bg-assets/redstars.png");
     background-size: 100px;
     background-repeat: repeat;
 
