@@ -24,6 +24,7 @@
     <link rel="icon" type="image/png" href="/a_assets/images/favicon/faviconDisk.png">
 
     <script src="https://unpkg.com/@studio-freight/lenis"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
 <div class="page-wrapper">
@@ -34,9 +35,9 @@
             <div class="top-group">
                 <h3 id="arrow">></h3>
                 <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/home.png" alt="home" onclick="navTo('/')">
-                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/stuff.png" alt="stuff" onclick="topFunction()">
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/stuff.png" alt="stuff" onclick="navTo('/stuff')">
 <!--                <input style="rotate: 90deg" type="image" src="/images/icons/stack.png" alt="community" onclick="navTo('/community')">-->
-                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/about.png" alt="about" onclick="navTo('/about')">
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/about.png" alt="about" onclick="topFunction()">
             </div>
 
             <h4>Home Page</h4>
@@ -53,15 +54,15 @@
                 <div style="justify-content: space-between; display: flex; align-items: center;">
                     <div class="socials">
                         <a href="https://github.com/SunnyFloppyDiskStudios" target="_blank"><img src="/a_assets/images/platforms/github.svg" alt="GitHub"/></a>
-<!--                        <a href="https://sunnyfloppydiskstudios.itch.io/" target="_blank"><img src="/images/platforms/itch.svg" alt="itch.io"/></a>-->
-<!--                        <a href="https://www.roblox.com/users/986533440/profile" target="_blank"><img src="/images/platforms/roblox.svg" alt="Roblox"/></a>-->
+                        <a href="https://sunnyfloppydiskstudios.itch.io/" target="_blank"><img src="/a_assets/images/platforms/itch.svg" alt="itch.io"/></a>
+                        <a href="https://www.roblox.com/users/986533440/profile" target="_blank"><img src="/a_assets/images/platforms/roblox.svg" alt="Roblox"/></a>
                     </div>
 
-<!--                    <div class="socials">-->
-<!--                        <a href="https://www.youtube.com/@SunnyFlops" target="_blank"><img src="/images/platforms/youtube.svg" alt="YouTube"/></a>-->
-<!--                        <a href="https://discord.gg/SGGnUUjf7P" target="_blank"><img src="/images/platforms/discord.svg" alt="Discord"/></a>-->
-<!--                        <a href="https://bsky.app/profile/sunnyflops.net" target="_blank"><img src="/images/platforms/bsky.svg" alt="Bluesky"/></a>-->
-<!--                    </div>-->
+                    <div class="socials">
+                        <a href="https://www.youtube.com/@SunnyFlops" target="_blank"><img src="/a_assets/images/platforms/youtube.svg" alt="YouTube"/></a>
+                        <a href="https://discord.gg/SGGnUUjf7P" target="_blank"><img src="/a_assets/images/platforms/discord.svg" alt="Discord"/></a>
+                        <a href="https://bsky.app/profile/sunnyflops.net" target="_blank"><img src="/a_assets/images/platforms/bsky.svg" alt="Bluesky"/></a>
+                    </div>
 
                     <!-- cookies, legal, credits -->
                     <h4 id="yearText" style="padding-right: 15px">{ yr }</h4>
@@ -72,14 +73,20 @@
     </header>
 
     <main class="content">
-        <div class="tileable-stars-black">
+        <div class="tileable-stars-black" style="align-items: center; height: 500px">
             <div>
-                <h1>My Stuff</h1>
+                <h1 style="margin-bottom: 0px"> </h1>
+                <h1 style="font-size: 32px; margin-top: 0px"> </h1>
+                <div class="purple-stripe"><div id="three-d-model"></div></div>
+
+                <h1 style="margin-bottom: 0px">hererhehrher</h1>
+                <h1 style="font-size: 32px; margin-top: 0px">ieriierierieir</h1>
+
             </div>
         </div>
     </main>
 </div>
 </body>
 <script src="/global.js"></script>
-<script src="/index.js"></script>
+<script src="about.js"></script>
 </html>

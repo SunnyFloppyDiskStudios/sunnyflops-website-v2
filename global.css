@@ -541,3 +541,12 @@ div.gap {
 @view-transition {
     navigation: auto;
 }
+
+.purple-stripe {
+    width: 100%;
+    height: 150px;
+    align-self: center;
+    align-content: center;
+
+    background-color: var(--purple);
+}
