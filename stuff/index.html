@@ -18,13 +18,13 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="stuff.css">
     <link rel="stylesheet" href="/media.css">
 
     <title>Sunny Floppy Disk Studios</title>
     <link rel="icon" type="image/png" href="/a_assets/images/favicon/faviconDisk.png">
 
     <script src="https://unpkg.com/@studio-freight/lenis"></script>
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
 <div class="page-wrapper">
@@ -34,13 +34,13 @@
         <nav class="sidebar-base" id="sidebar">
             <div class="top-group">
                 <h3 id="arrow">></h3>
-                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/home.png" alt="home" onclick="navTo('/')">
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/home.png" alt="home" onclick="topFunction()">
                 <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/stuff.png" alt="stuff" onclick="navTo('/stuff')">
 <!--                <input style="rotate: 90deg" type="image" src="/images/icons/stack.png" alt="community" onclick="navTo('/community')">-->
-                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/about.png" alt="about" onclick="topFunction()">
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/about.png" alt="about" onclick="navTo('/about')">
             </div>
 
-            <h4>SunnyFlops</h4>
+            <h4>Stuff</h4>
             <img id="sb-logo" src="/a_assets/images/branding/floppy.png" alt="floppy disk logo">
         </nav>
 
@@ -73,20 +73,19 @@
     </header>
 
     <main class="content">
-        <div class="tileable-stars-black" style="align-items: center; height: 500px">
-            <div>
-                <h1 style="margin-bottom: 0px"> </h1>
-                <h1 style="font-size: 32px; margin-top: 0px"> </h1>
-                <div class="purple-stripe"><div id="three-d-model"></div></div>
-
-                <h1 style="margin-bottom: 0px">hererhehrher</h1>
-                <h1 style="font-size: 32px; margin-top: 0px">ieriierierieir</h1>
-
+        <div class="tileable-stars-black" style="align-items: center">
+            <div class="split">
+                <div class="left-split">
+                    <h1 style="font-size: 43px">LEFT</h1>
+                </div>
+                <div class="right-content">
+                    <h1 style="font-size: 43px">RIGHT</h1>
+                </div>
             </div>
         </div>
     </main>
 </div>
 </body>
 <script src="/global.js"></script>
-<script src="about.js"></script>
+<script src="stuff.js"></script>
 </html>
