@@ -16,6 +16,10 @@
     width: 50%;
 }
 
+.column img {
+    max-width: 50%;
+}
+
 .c-left {
     align-content: center;
 }
