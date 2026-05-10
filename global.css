@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: Fredoka;
-    src: url("a_assets/fonts/Fredoka One.ttf")
+    src: url("a_assets/fonts/Fredoka.ttf")
 }
 
 @font-face {
@@ -411,82 +411,6 @@ div.gap {
     text-align: center;
     color: white;
     /*align-items: center;*/
-    -webkit-text-stroke: 7.5px black;
-    paint-order: stroke fill;
-
-    animation: scrollStars 60s linear infinite;
-}
-
-.tileable-stars-blue {
-    background-image: url("/a_assets/images/bg-assets/bluestars.png");
-    background-size: 100px;
-    background-repeat: repeat;
-    height: 300px;
-
-    display: grid;
-    position: relative;
-    text-align: center;
-    color: white;
-    align-items: center;
-    -webkit-text-stroke: 7.5px black;
-    paint-order: stroke fill;
-
-    animation: scrollStars 60s linear infinite;
-}
-
-.tileable-stars-purple {
-    position: relative;
-    overflow: hidden;
-    color: white;
-    text-align: center;
-    align-items: center;
-    -webkit-text-stroke: 7.5px black;
-    paint-order: stroke fill;
-    width: 100%;
-}
-
-.tileable-stars-purple::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background-image: url("/a_assets/images/bg-assets/purplepattern.png");
-    background-size: 280px;
-    background-repeat: repeat;
-    transform: rotate(-5deg);
-    z-index: -1;
-    animation: scrollStars 60s linear infinite;
-}
-
-.tileable-stars-yellow {
-    background-image: url("/a_assets/images/bg-assets/yellowstars.png");
-    background-size: 100px;
-    background-repeat: repeat;
-    height: 300px;
-
-    display: grid;
-    position: relative;
-    text-align: center;
-    color: white;
-    align-items: center;
-    -webkit-text-stroke: 7.5px black;
-    paint-order: stroke fill;
-
-    animation: scrollStars 60s linear infinite;
-}
-
-.tileable-stars-red {
-    background-image: url("/a_assets/images/bg-assets/redstars.png");
-    background-size: 100px;
-    background-repeat: repeat;
-
-    display: grid;
-    position: relative;
-    text-align: center;
-    color: white;
-    align-items: center;
     -webkit-text-stroke: 7.5px black;
     paint-order: stroke fill;
 
