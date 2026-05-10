@@ -251,18 +251,15 @@ h1 a:hover {
     margin-bottom: 15px;
 }
 
-.sidebar-base a span {
-    display: inline-block;
-    transition: transform 0.3s var(--curve);
-}
+/*.sidebar-base a {*/
+/*    display: inline-block;*/
+/*    transition: transform 0.3s var(--curve);*/
+/*}*/
 
-.sidebar-base a:hover span {
-    transform: scale(1.3);
-}
-
-.sidebar-base a:hover {
-    background-color: transparent;
-}
+/*.sidebar-top a:hover {*/
+/*    transform: scale(1.3);*/
+/*    transition: transform 0.3s var(--curve);*/
+/*}*/
 
 .sidebar-base .hidden-nav {
     rotate: 90deg;
@@ -549,4 +546,17 @@ div.gap {
     align-content: center;
 
     background-color: var(--purple);
+}
+
+.side-links {
+    color: white;
+    padding-left: 0;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.side-headers {
+    padding-top: 8px !important;
+    font-size: 30px;
+    padding-bottom: 9px !important;
 }
