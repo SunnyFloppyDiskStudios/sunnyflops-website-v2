@@ -299,7 +299,24 @@ div.gap {
     text-align: center;
     color: white;
     /*align-items: center;*/
-    -webkit-text-stroke: 7.5px black;
+    -webkit-text-stroke: 8px black;
+    paint-order: stroke fill;
+
+    animation: scrollStars 60s linear infinite;
+}
+
+.tileable-stars-purple {
+    background-image: url("/a_assets/images/bg-assets/purplepattern.png");
+    background-size: 280px;
+    background-repeat: repeat;
+    height: 100vh;
+
+    display: grid;
+    position: relative;
+    text-align: center;
+    color: white;
+    /*align-items: center;*/
+    -webkit-text-stroke: 8px black;
     paint-order: stroke fill;
 
     animation: scrollStars 60s linear infinite;
@@ -344,4 +361,11 @@ div.gap {
     justify-content: space-between;
     display: flex;
     align-items: center;
+}
+
+.fof-text {
+    font-size: 100px;
+    -webkit-text-stroke: 14px black;
+    animation: swayUpDown 1.5s ease-in-out infinite;
+    color: #FFDB58;
 }

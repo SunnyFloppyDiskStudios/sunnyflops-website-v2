@@ -5,75 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 
-    <meta property="og:title" content="error page">
-    <meta property="og:description" content="404 probably">
-    <meta property="og:image" content="/images/branding/floppy.svg">
+    <meta property="og:title" content="404">
+    <meta property="og:description" content="???">
+    <meta property="og:image" content="images/branding/floppy.svg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="global.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-          rel="stylesheet">
+    <title>404</title>
+    <link rel="icon" type="image/png" href="a_assets/images/favicon/faviconDisk.png">
 
-    <link rel="stylesheet" href="/global.css">
-    <link rel="stylesheet" href="/media.css">
-
-    <title>404...</title>
-    <link rel="icon" type="image/png" href="/a_assets/images/favicon/faviconDisk.png">
+    <script src="https://unpkg.com/@studio-freight/lenis"></script>
 </head>
 <body>
 <div class="page-wrapper">
     <header>
-        <nav class="sidebar">
-            <div class="nav-highlight"></div>
-            <ul>
-                <li><a href="/"><span>Home</span></a></li>
-                <li><a href="games"><span>Games</span></a></li>
-                <li><a href="apps"><span>Apps</span></a></li>
-                <li><a href="more"><span>More</span></a></li>
-                <li><a href="community"><span>Community</span></a></li>
+        <div class="navbar-gradient"></div>
+        <div id="cursor-follow"></div>
 
-                <li class="nav-left"><a href="about"><span>About</span></a></li>
-            </ul>
+        <!--        SIDEBAR-->
+        <nav class="sidebar-base" id="sidebar">
+            <div class="top-group">
+                <h3 id="arrow">></h3>
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/home.png" alt="home" onclick="topFunction()">
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/stuff.png" alt="stuff" onclick="navTo('/stuff')">
+                <!--            <input style="rotate: 90deg" type="image" src="/images/icons/stack.png" alt="community" onclick="navTo('/community')">-->
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/about.png" alt="about" onclick="navTo('/about')">
+            </div>
+
+            <h4>Home Page</h4>
+            <img id="sb-logo" src="/a_assets/images/branding/floppy.png" alt="floppy disk logo">
         </nav>
+
+        <nav class="sidebar-expanded">
+            <div class="sidebar-top" style="flex-direction: column; display: flex">
+                <h3 class="side-headers">Links</h3>
+                <a class="side-links" href="https://sunnyflops.net">Home</a>
+                <a class="side-links" href="https://sunnyflops.net/stuff">Stuff</a>
+                <a class="side-links" href="https://sunnyflops.net/about">About</a>
+
+                <h3 class="side-headers">More Links</h3>
+                <a class="side-links" href="https://boredle.sunnyflops.net">boredle</a>
+                <a class="side-links" href="https://onthenow.sunnyflops.net">onthenow</a>
+                <a class="side-links" href="https://flopic.sunnyflops.net">FLOPIC editor</a>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="social-container">
+                    <div class="socials">
+                        <a href="https://github.com/SunnyFloppyDiskStudios" target="_blank"><img src="/a_assets/images/platforms/github.svg" alt="GitHub"/></a>
+                        <a href="https://sunnyfloppydiskstudios.itch.io/" target="_blank"><img src="/a_assets/images/platforms/itch.svg" alt="itch.io"/></a>
+                        <a href="https://www.roblox.com/users/986533440/profile" target="_blank"><img src="/a_assets/images/platforms/roblox.svg" alt="Roblox"/></a>
+                    </div>
+
+                    <div class="socials">
+                        <a href="https://www.youtube.com/@SunnyFlops" target="_blank"><img src="/a_assets/images/platforms/youtube.svg" alt="YouTube"/></a>
+                        <a href="https://discord.gg/SGGnUUjf7P" target="_blank"><img src="/a_assets/images/platforms/discord.svg" alt="Discord"/></a>
+                        <a href="https://bsky.app/profile/sunnyflops.net" target="_blank"><img src="/a_assets/images/platforms/bsky.svg" alt="Bluesky"/></a>
+                    </div>
+
+                    <!-- cookies, legal, credits -->
+                    <h4 id="yearText" style="padding-right: 15px">{ yr }</h4>
+                </div>
+                <h4 style="font-size: 30px">SUNNY FLOPPY DISK STUDIOS</h4>
+            </div>
+        </nav>
+        <!--        SIDEBAR-->
     </header>
 
-    <main class="content" style="display: flex">
-        <div class="gap"></div>
-
+    <main class="content">
         <div class="tileable-stars-purple">
             <div>
-                <h1 style="font-size: 100px;
-                           -webkit-text-stroke: 13.5px black;
-                           animation: swayUpDown 1.5s ease-in-out infinite;
-                           color: #FFDB58">{ 404! }
-                </h1>
+                <h1 class="fof-text">{ 404! }</h1>
 
-                <h1>PAGE NOT FOUND :(</h1>
+                <h1 style="padding-top: 100px">PAGE NOT FOUND :(</h1>
             </div>
         </div>
     </main>
-
-
-
-    <footer class="footer">
-        <img id="footer-logo" src="/a_assets/images/branding/floppy.png" alt="Sunny Floppy Disk Studios Logo"/>
-        <h5 id="footerText">2000250025002502540204500502</h5>
-
-        <div id="socials">
-            <a href="https://www.youtube.com/@SunnyFlops" target="_blank"><img src="/a_assets/images/platforms/youtube.svg"
-                                                                               alt="YouTube"/></a>
-            <a href="https://discord.gg/SGGnUUjf7P" target="_blank"><img src="/a_assets/images/platforms/discord.svg"
-                                                                         alt="Discord"/></a>
-            <a href="https://github.com/SunnyFloppyDiskStudios" target="_blank"><img src="/a_assets/images/platforms/github.svg"
-                                                                                     alt="GitHub"/></a>
-            <a href="https://bsky.app/profile/sunnyflops.bsky.social" target="_blank"><img
-                    src="/a_assets/images/platforms/bsky.svg" alt="Bluesky"/></a>
-        </div>
-    </footer>
 </div>
 </body>
-<script src="/global.js"></script>
+<script src="global.js"></script>
 </html>
