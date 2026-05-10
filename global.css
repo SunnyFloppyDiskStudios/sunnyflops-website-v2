@@ -339,3 +339,9 @@ div.gap {
     font-size: 30px;
     padding-bottom: 9px !important;
 }
+
+.social-container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
