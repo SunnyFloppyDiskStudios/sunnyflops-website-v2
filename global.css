@@ -379,3 +379,7 @@ div.gap {
 .sidebar-top {
     overflow-y: scroll;
 }
+
+#yearText {
+    padding-right: 0 !important;
+}
