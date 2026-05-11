@@ -134,7 +134,7 @@ h1 a:hover {
 .sidebar-expanded {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: var(--purple);
     position: fixed;
     top: 0;
@@ -368,4 +368,14 @@ div.gap {
     -webkit-text-stroke: 14px black;
     animation: swayUpDown 1.5s ease-in-out infinite;
     color: #FFDB58;
+}
+
+.sidebar-bottom {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--purple);
+}
+
+.sidebar-top {
+    overflow-y: scroll;
 }
