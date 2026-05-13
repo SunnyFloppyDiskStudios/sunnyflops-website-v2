@@ -299,7 +299,7 @@ div.gap {
     text-align: center;
     color: white;
     /*align-items: center;*/
-    -webkit-text-stroke: 8px black;
+    -webkit-text-stroke: 7px black;
     paint-order: stroke fill;
 
     animation: scrollStars 60s linear infinite;
@@ -316,7 +316,7 @@ div.gap {
     text-align: center;
     color: white;
     /*align-items: center;*/
-    -webkit-text-stroke: 8px black;
+    -webkit-text-stroke: 7px black;
     paint-order: stroke fill;
 
     animation: scrollStars 60s linear infinite;
@@ -348,7 +348,15 @@ div.gap {
     color: white;
     padding-left: 0;
     padding-bottom: 10px;
-    text-decoration: none;
+    text-decoration: underline solid transparent;
+    transition: all 0.3s var(--curve);
+}
+
+.side-links:hover {
+    text-decoration: underline solid white;
+    font-size: 37px;
+
+    transition: all 0.3s var(--curve);
 }
 
 .side-headers {
