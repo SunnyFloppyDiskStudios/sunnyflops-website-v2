@@ -39,7 +39,7 @@ html {
 
     background-color: #000;
 
-    scrollbar-width: none;
+    scrollbar-width: thin;
 }
 
 html, body {
@@ -65,6 +65,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     padding: 0 10px;
     white-space: pre-wrap;
+
+    user-select: none;
 }
 
 h1 {font-size: 45px;}
@@ -80,6 +82,8 @@ p {
     padding-right: 10px;
     word-wrap: break-word;
     white-space: pre-wrap;
+
+    user-select: none;
 }
 
 a {
@@ -92,16 +96,24 @@ a {
     white-space: pre-wrap;
     transition: font-size 0.3s var(--curve);
     cursor: pointer;
+
+    user-select: none;
 }
 
 h1 a {
     display: inline-block;
     transition: transform 0.3s var(--curve);
     cursor: pointer;
+
+    user-select: none;
 }
 
 h1 a:hover {
     transform: scale(1.1);
+}
+
+h1 a:active {
+    transform: scale(1);
 }
 
 .sidebar-base {
@@ -225,6 +237,10 @@ h1 a:hover {
     transform: scale(1.35) rotate(-90deg);
 }
 
+.sidebar-base input:active {
+    transform: scale(1.15) rotate(-100deg);
+}
+
 .sidebar-base h3 {
     color: white;
     font-weight: bolder;
@@ -268,6 +284,10 @@ h1 a:hover {
     transform: scale(1.35);
 }
 
+.socials a img:active {
+    transform: scale(1.15) rotate(-10deg);
+}
+
 .gap {
     background-color: var(--purple);
 }
@@ -292,7 +312,9 @@ div.gap {
     background-image: url("/a_assets/images/bg-assets/invis-black-stars.png");
     background-size: 100px;
     background-repeat: repeat;
-    height: 100vh;
+
+    min-height: 100vh;
+    height: 100%;
 
     display: grid;
     position: relative;
@@ -355,6 +377,13 @@ div.gap {
 .side-links:hover {
     text-decoration: underline solid white;
     font-size: 37px;
+
+    transition: all 0.3s var(--curve);
+}
+
+.side-links:active {
+    text-decoration: underline solid white;
+    font-size: 30px;
 
     transition: all 0.3s var(--curve);
 }
