@@ -116,6 +116,24 @@ h1 a:active {
     transform: scale(1);
 }
 
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    user-drag: none;
+    -webkit-user-drag: none;
+}
+
+* input {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    user-drag: none;
+    -webkit-user-drag: none;
+}
+
 .sidebar-base {
     display: flex;
     flex-direction: column;
