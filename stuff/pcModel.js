@@ -39,7 +39,7 @@ camera.position.setZ(5);
 
 // scene content
 const ambientLight = new THREE.AmbientLight(0xFFFFFF);
-ambientLight.intensity = 2;
+ambientLight.intensity = 3;
 scene.add(ambientLight);
 
 const controls = new OrbitControls(camera, renderer.domElement);
