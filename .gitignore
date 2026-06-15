@@ -3,3 +3,6 @@
 
 *.sketch
 additonal/design file.sketch
+
+/node_modules
+package-lock.json
