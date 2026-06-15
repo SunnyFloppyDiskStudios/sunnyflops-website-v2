@@ -39,6 +39,7 @@ camera.position.setZ(5);
 
 // scene content
 const ambientLight = new THREE.AmbientLight(0xFFFFFF);
+ambientLight.intensity = 2;
 scene.add(ambientLight);
 
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -46,11 +47,35 @@ controls.enablePan = false;
 controls.enableZoom = false;
 
 // animator
+let hasBegun = false;
+let hasEntered = false;
+
+const scaleRate = 0.05;
+
 function animate() {
     requestAnimationFrame(animate);
 
-    object.rotation.y += 0.005;
+    if (!hasBegun) {
+        object.scale.set(0,0,0);
+        object.position.setY(-2);
+        hasBegun = true;
+    }
 
+    if (!hasEntered && hasBegun) {
+        if (object.scale.x < 1) {
+            object.rotation.y += 0.27;
+
+            object.scale.x += scaleRate;
+            object.scale.y += scaleRate;
+            object.scale.z += scaleRate;
+
+            object.position.y += scaleRate * 2;
+
+        } else {
+            hasEntered = true;
+        }
+    }
+    object.rotation.y += 0.0067;
     controls.update();
 
     renderer.render(scene, camera);
