@@ -45,6 +45,7 @@ scene.add(ambientLight);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enablePan = false;
 controls.enableZoom = false;
+controls.enableDamping = true;
 
 // animator
 let hasBegun = false;
