@@ -1,3 +1,4 @@
+// three
 import * as THREE from "three";
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
@@ -47,21 +48,49 @@ controls.enablePan = false;
 controls.enableZoom = false;
 controls.enableDamping = true;
 
-// animator
+// animator variables
 let hasBegun = false;
 let hasEntered = false;
 
 const scaleRate = 0.05;
 
+// squish effect
+let canClick = true;
+let isAnimatingClick = false;
+
+let targetY = 0.5
+let normalY = 1
+let stage = 0;
+
+let squishRate = 0.04;
+
+canv.addEventListener('mousedown', function(e) {
+    if (!object) { return; }
+    if (!canClick) { return; }
+
+    canClick = false;
+    isAnimatingClick = true;
+    stage = 1;
+})
+
+// animator
 function animate() {
     requestAnimationFrame(animate);
 
+    // if non existant
+    if (!object) {
+        renderer.render(scene, camera);
+        return;
+    }
+
+    // start ingoing animation
     if (!hasBegun) {
         object.scale.set(0,0,0);
         object.position.setY(-2);
         hasBegun = true;
     }
 
+    // general loop
     if (!hasEntered && hasBegun) {
         if (object.scale.x < 1) {
             object.rotation.y += 0.27;
@@ -77,8 +106,51 @@ function animate() {
         }
     }
     object.rotation.y += 0.0067;
-    controls.update();
 
+
+    // object.traverse(child => {
+    //     if (child.name === "Cube001") {
+    //     }
+    // })
+
+    // squish effect logic
+    if (isAnimatingClick) {
+        console.log(stage);
+        console.log(object.scale.y)
+
+        // if big, make small
+        if (object.scale.y >= targetY && stage === 1) {
+            object.scale.y -= squishRate;
+            object.scale.x += squishRate / 2;
+            object.scale.z += squishRate / 2;
+        }
+
+        // if small, make stage
+        if (object.scale.y <= targetY && stage === 1) {
+            stage = 2;
+        }
+
+        // if small, make big
+        if (object.scale.y <= normalY && stage === 2) {
+            object.scale.y += squishRate;
+            object.scale.x -= squishRate / 2;
+            object.scale.z -= squishRate / 2;
+        }
+
+        // if big, make stage
+        if (object.scale.y >= normalY && stage === 2) {
+            stage = 3;
+        }
+
+        // kill
+        if (object.scale.y >= normalY && stage === 3) {
+            stage = 0;
+            isAnimatingClick = false;
+            canClick = true;
+        }
+    }
+
+    controls.update();
     renderer.render(scene, camera);
 }
 
