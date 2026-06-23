@@ -62,7 +62,7 @@ let targetY = 0.5
 let normalY = 1
 let stage = 0;
 
-let squishRate = 0.05;
+let squishRate = 0.067;
 
 canv.addEventListener('mousedown', function(e) {
     if (!object) { return; }

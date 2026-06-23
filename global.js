@@ -40,11 +40,21 @@ function closeSidebar() {
     sbe.style.transform = "translateX(-450px)";
 }
 
+function toggleSidebar() {
+    if (arrow.textContent === '<') {
+        closeSidebar();
+    } else {
+        openSidebar();
+    }
+}
+
 sbb.addEventListener('mouseenter', openSidebar);
 sbb.addEventListener('mouseleave', closeSidebar);
 
 sbe.addEventListener('mouseenter', openSidebar);
 sbe.addEventListener('mouseleave', closeSidebar);
+
+arrow.addEventListener('click', toggleSidebar);
 
 // cursor following element
 const move = document.getElementById("cursor-follow");

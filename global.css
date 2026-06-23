@@ -440,3 +440,7 @@ div.gap {
 #yearText {
     padding-right: 0 !important;
 }
+
+#arrow {
+    cursor: pointer;
+}
