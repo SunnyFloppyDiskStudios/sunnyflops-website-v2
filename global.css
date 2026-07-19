@@ -448,7 +448,3 @@ div.gap {
 #arrow {
     cursor: pointer;
 }
-
-#arrow:hover {
-    transform: scale(1.1);
-}
