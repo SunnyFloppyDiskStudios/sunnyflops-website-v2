@@ -107,12 +107,6 @@ function animate() {
     }
     object.rotation.y += 0.0067;
 
-
-    // object.traverse(child => {
-    //     if (child.name === "Cube001") {
-    //     }
-    // })
-
     // squish effect logic
     if (isAnimatingClick) {
         console.log(stage);
