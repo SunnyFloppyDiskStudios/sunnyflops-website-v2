@@ -176,7 +176,7 @@ img {
     top: 0;
     left: 0;
     width: 450px;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
     z-index: 9998;
 
@@ -438,7 +438,9 @@ div.gap {
 }
 
 .sidebar-top {
-    overflow-y: scroll;
+    height: calc(100% - 82px);
+
+    overflow-y: auto;
 }
 
 #yearText {
