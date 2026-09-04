@@ -1,7 +1,9 @@
 .stuff-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+
+    padding: 10px;
 }
 
 .stuff-left {
@@ -139,4 +141,31 @@
 
 #stuff-canvas:active {
     cursor: grabbing;
+}
+
+.sp-banner {
+    height: 450px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.sp-banner-bg-text {
+    position: absolute;
+    -webkit-text-stroke: 7px var(--purple);
+    color: black;
+    font-weight: 1000;
+    font-size: 150px;
+
+    transform: rotate(-5deg);
+}
+
+.sp-banner img {
+    width: 450px;
+    position: absolute;
+}
+
+#stuff-canvas {
+    z-index: 67;
 }

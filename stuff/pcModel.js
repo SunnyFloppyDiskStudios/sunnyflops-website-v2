@@ -30,7 +30,7 @@ const height = canv.offsetHeight;
 
 // scene setup
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ alpha: true, canvas: canv });
 
 renderer.setPixelRatio(window.devicePixelRatio);
