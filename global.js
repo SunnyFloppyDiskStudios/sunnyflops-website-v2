@@ -14,7 +14,7 @@ function topFunction() {
 }
 
 function navTo(where) {
-    window.location.href = where;
+    window.open(where, "_blank").focus();
 }
 
 // sidebar stuff
