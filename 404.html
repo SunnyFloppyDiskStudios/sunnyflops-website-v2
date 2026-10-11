@@ -9,7 +9,7 @@
     <meta property="og:description" content="???">
     <meta property="og:image" content="images/branding/floppy.svg">
 
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="global/global.css">
 
     <title>404</title>
     <link rel="icon" type="image/png" href="a_assets/images/favicon/faviconDisk.png">
@@ -25,9 +25,9 @@
         <nav class="sidebar-base" id="sidebar">
             <div class="top-group">
                 <h3 id="arrow">></h3>
-                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/home.png" alt="home" onclick="navTo('/')">
-                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/stuff.png" alt="stuff" onclick="navTo('/stuff')">
-                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/about.png" alt="about" onclick="navTo('/about')">
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/home.png" alt="home" onclick="sfnNavTo('/')">
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/stuff.png" alt="stuff" onclick="sfnNavTo('/stuff')">
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/about.png" alt="about" onclick="sfnNavTo('/about')">
             </div>
 
             <h4>404</h4>
@@ -37,9 +37,9 @@
         <nav class="sidebar-expanded">
             <div class="sidebar-top" style="flex-direction: column; display: flex">
                 <h3 class="side-headers">Links</h3>
-                <a class="side-links" onclick="navTo('/')">Home</a>
-                <a class="side-links" onclick="navTo('/stuff')">Stuff</a>
-                <a class="side-links" onclick="navTo('/about')">About</a>
+                <a class="side-links" onclick="sfnNavTo('/')">Home</a>
+                <a class="side-links" onclick="sfnNavTo('/stuff')">Stuff</a>
+                <a class="side-links" onclick="sfnNavTo('/about')">About</a>
 
                 <h3 class="side-headers">More Links</h3>
                 <a class="side-links" href="https://boredle.sunnyflops.net">boredle</a>
@@ -81,5 +81,5 @@
     </main>
 </div>
 </body>
-<script src="global.js"></script>
+<script src="global/global.js"></script>
 </html>

@@ -14,12 +14,12 @@
 
 @font-face {
     font-family: Fredoka;
-    src: url("a_assets/fonts/Fredoka.ttf")
+    src: url("../a_assets/fonts/Fredoka.ttf")
 }
 
 @font-face {
     font-family: Rubik;
-    src: url("a_assets/fonts/Rubik.ttf")
+    src: url("../a_assets/fonts/Rubik.ttf")
 }
 
 body {

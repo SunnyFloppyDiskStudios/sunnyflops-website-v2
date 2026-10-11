@@ -17,6 +17,10 @@ function navTo(where) {
     window.open(where, "_blank").focus();
 }
 
+function sfnNavTo(where) {
+    window.location.href = where;
+}
+
 // sidebar stuff
 document.addEventListener("DOMContentLoaded", () => {
     const year = new Date().getFullYear();

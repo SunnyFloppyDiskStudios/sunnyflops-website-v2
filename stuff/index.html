@@ -9,7 +9,7 @@
     <meta property="og:description" content="creations and things like that">
     <meta property="og:image" content="images/branding/floppy.svg">
 
-    <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/global/global.css">
     <link rel="stylesheet" href="stuff.css">
 
     <title>Sunny Floppy Disk Studios</title>
@@ -26,9 +26,9 @@
         <nav class="sidebar-base" id="sidebar">
             <div class="top-group">
                 <h3 id="arrow">></h3>
-                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/home.png" alt="home" onclick="navTo('/')">
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/home.png" alt="home" onclick="sfnNavTo('/')">
                 <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/stuff.png" alt="stuff" onclick="topFunction()">
-                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/about.png" alt="about" onclick="navTo('/about')">
+                <input style="rotate: 90deg" type="image" src="/a_assets/images/icons/about.png" alt="about" onclick="sfnNavTo('/about')">
             </div>
 
             <h4>Stuff</h4>
@@ -38,9 +38,9 @@
         <nav class="sidebar-expanded">
             <div class="sidebar-top" style="flex-direction: column; display: flex">
                 <h3 class="side-headers">Links</h3>
-                <a class="side-links" onclick="navTo('/')">Home</a>
+                <a class="side-links" onclick="sfnNavTo('/')">Home</a>
                 <a class="side-links" onclick="topFunction()">Stuff</a>
-                <a class="side-links" onclick="navTo('/about')">About</a>
+                <a class="side-links" onclick="sfnNavTo('/about')">About</a>
 
                 <h3 class="side-headers">More Links</h3>
                 <a class="side-links" href="https://boredle.sunnyflops.net">boredle</a>
@@ -470,7 +470,7 @@
     }
 </script>
 
-<script src="/global.js"></script>
+<script src="/global/global.js"></script>
 <script src="stuff.js"></script>
 <script type="module" src="/stuff/pcModel.js"></script>
 </html>
