@@ -169,3 +169,9 @@
 #stuff-canvas {
     z-index: 67;
 }
+
+.stuff-featured-text {
+    margin-bottom: 10px;
+    padding-left: 0;
+    align-self: flex-start;
+}
