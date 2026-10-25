@@ -11,3 +11,5 @@ window.addEventListener("DOMContentLoaded", () => {
         greetingElement.innerText = greetings[Math.floor(Math.random() * greetings.length)];
     }
 });
+
+// animator

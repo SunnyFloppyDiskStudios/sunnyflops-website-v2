@@ -187,6 +187,12 @@ img {
     transition: transform 0.25s ease;
 }
 
+.sidebar-bottom {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--purple);
+}
+
 .sidebar-expanded h1, .sidebar-expanded h2, .sidebar-expanded h3, .sidebar-expanded h4, .sidebar-expanded h5, .sidebar-expanded h6 {
     color: white;
     margin: 1px 0;
@@ -429,12 +435,6 @@ div.gap {
     -webkit-text-stroke: 14px black;
     animation: swayUpDown 1.5s ease-in-out infinite;
     color: #FFDB58;
-}
-
-.sidebar-bottom {
-    position: absolute;
-    bottom: 0;
-    background-color: var(--purple);
 }
 
 .sidebar-top {
