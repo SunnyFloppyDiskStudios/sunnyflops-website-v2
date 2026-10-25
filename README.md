@@ -5,5 +5,6 @@ External libraries used:
 - Lenis
 - threeJS
 
-Hosted using Github Pages
-Domain Provider is Porkbun
+Hosted using GitHub Pages
+
+Domain provider is Porkbun
