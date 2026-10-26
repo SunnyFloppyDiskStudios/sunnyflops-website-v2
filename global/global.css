@@ -371,7 +371,7 @@ div.gap {
     -webkit-text-stroke: 7px black;
     paint-order: stroke fill;
 
-    animation: scrollStars 60s linear infinite;
+    animation: scrollPattern 60s linear infinite;
 }
 
 @keyframes swayUpDown {
@@ -389,6 +389,15 @@ div.gap {
     }
     100% {
         background-position: 1000px -700px;
+    }
+}
+
+@keyframes scrollPattern {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1000px 0;
     }
 }
 
